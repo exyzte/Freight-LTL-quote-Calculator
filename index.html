@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Freight Quote Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <h1>Freight Quote Calculator 🚚</h1>
+    <form id="quoteForm">
+        <label>Pickup ZIP:
+            <input type="text" id="pickupZip" required>
+        </label>
+        <label>Delivery ZIP:
+            <input type="text" id="deliveryZip" required>
+        </label>
+        <label>Weight (lbs):
+            <input type="number" id="weight" required>
+        </label>
+        <label>Length (in):
+            <input type="number" id="length" required>
+        </label>
+        <label>Width (in):
+            <input type="number" id="width" required>
+        </label>
+        <label>Height (in):
+            <input type="number" id="height" required>
+        </label>
+        <label>Freight Type:
+            <select id="freightType">
+                <option value="Pallet">Pallet</option>
+                <option value="Box">Box</option>
+                <option value="Oversize">Oversize</option>
+            </select>
+        </label>
+        <button type="submit">Calculate Quote</button>
+    </form>
+
+    <section id="quoteResult"></section>
+
+    <script src="script.js"></script>
+</body>
+</html>
